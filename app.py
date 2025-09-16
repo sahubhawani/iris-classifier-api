@@ -11,7 +11,7 @@ app = Flask(__name__)
 
 @app.route("/")
 def home():
-    return "Iris Classifier API is Running!"  # Simple message to confirm the server is active
+    return "Hey Bhabs, Your Iris Classifier API is Running!"  # Simple message to confirm the server is active
 
 @app.route("/predict", methods=["POST"])
 def predict():
@@ -41,4 +41,5 @@ def predict():
 
 if __name__ == "__main__":
     app.run(host="0.0.0.0", port=5000)  # Run the server on all interfaces (for external access) on port 5000
+
 
